@@ -37,3 +37,45 @@ ol {
     width: calc(x *100% / 6);
     padding: 20px;
 }
+
+
+/* app */
+#app {
+    background-color: #333;
+    color: white;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    z-index: 1;
+
+}
+
+#app__header {
+    background-color: black;
+    padding: 20px;
+    width: calc(40px + 20%);
+    display: flex;
+    flex-direction: column;
+    z-index: 3;
+}
+
+#app__main {
+    background-color: #1e1a1a;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+
+}
+
+#app__footer {
+    background-color: #666666;
+    padding: 20px;
+    z-index: 4;
+    position: fixed;
+    top: calc(100vh - 32px);
+    width: 100%;
+    height: 32px;
+}
